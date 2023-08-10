@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bgimage"
+            android:scaleType="centerCrop"
+            android:alpha="0.6"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btnsearchformeals"
+                style="@style/buttonWhite"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="52dp"
+                android:text="Search for Meals"
+                android:textColor="#3A4E69"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#ebe134"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnsearchingredients"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnsearchingredients"
+                style="@style/buttonWhite"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="45dp"
+                android:text="Search for Meals by Ingredient"
+                android:textColor="#3A4E69"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#ebe134"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnadd"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnadd"
+                style="@style/buttonWhite"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="384dp"
+                android:text="Add Meals to DB"
+                android:textColor="#3A4E69"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#ebe134"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnsearchdb"
+                style="@style/buttonWhite"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="76dp"
+                android:text="Search Meal by Name"
+                android:textColor="#3A4E69"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#ebe134"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnsearchformeals"
+                app:layout_constraintVertical_bias="0.742"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="396dp"
+                android:layout_height="264dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
